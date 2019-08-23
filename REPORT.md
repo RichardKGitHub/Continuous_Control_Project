@@ -66,7 +66,8 @@ The Project was solved by two different network architectures
 ![training scores DDPG_1][image1]
 - the test was performed over 105 episodes with the weights that where saved at episodes 140 of training. Noise was added to the actions during the test - config_30.json
   - Min_Score: 37.18 (Plot mean_scores of following graph)
-  - Max_Score: 38.67 (Plot mean_scores of following graph):
+  - Max_Score: 38.67 (Plot mean_scores of following graph)
+  - The min_scores/max_scores of the following graph are showing the score of the worst/best agent for each episode
 ![test scores DDPG_1][image2]
   - Min_consecutive_Score: 37.93
   - Max_consecutive_Score: 37.94:
@@ -76,7 +77,8 @@ The Project was solved by two different network architectures
 ![training scores DDPG_2][image4]
 - the test was performed over 105 episodes with the weights that where saved at episodes 126 of training. No Noise was added to the actions during the test - config_26.json
   - Min_Score: 38.84 (Plot mean_scores of following graph)
-  - Max_Score: 39.47 (Plot mean_scores of following graph):
+  - Max_Score: 39.47 (Plot mean_scores of following graph)
+  - The min_scores/max_scores of the following graph are showing the score of the worst/best agent for each episode
 ![test scores DDPG_2][image5]
   - Min_consecutive_Score: 39.2052
   - Max_consecutive_Score: 39.2084:
