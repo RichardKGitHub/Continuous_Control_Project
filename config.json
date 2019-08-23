@@ -1,0 +1,60 @@
+# this json file can only be loaded with commentjson instead of json
+# pip install commentjson
+# with open('config.json', 'r') as f:
+#   config = commentjson.load(f)
+
+{
+"load_indices": "s_29",           # s_29 for solved weights of DDPG_1 or g_25 for general weights of DDPG_2 (g_ was saved after <episodes_train> steps)
+"save_indices": "31",             # used for saving the weights and plots
+"path_load": "archive/",
+"path_save": "results/",
+"load_parameters_from_file": false,       # load pretrained parameters for training
+
+"save_weights": true,
+"save_plot": true,
+"show_plot": true,
+
+"episodes_train": 250,            # Number of episodes if --train==True for Administration.train()
+"episodes_test": 105,             # Number of episodes if --train==False   # 100000 for env_utils.get_states_min_max_values()
+
+# mean of reward must reach 'target_reward' over 'consecutive_episodes_required' episodes
+"target_reward": 30,
+"consecutive_episodes_required": 100,
+
+"network_type": "DDPG_2",         # expected: DDPG_1 or DDPG_2
+"actor_fcs1_units": 128,          # 256
+"actor_fcs2_units": 128,          # 256
+"critic_fcs1_units": 128,         # 128
+"critic_fcs2_units": 128,         # 256
+"critic_fcs3_units": 64,         # 128
+
+# parameters for: add noise to action
+"add_noise": true,                # add noise to action (this only changes for training - noise always off for testing)
+"epsilon_start": 1,               # 0.5 # epsilon = 0 no noise |epsilon = 1 is random (always with noise)
+"epsilon_end": 1,                 # 0.01
+"epsilon_decay": 0.999,           # 0.99
+"epsilon_test": 1,                # epsilon during test mode
+"noise_theta": 0.24,
+"noise_sigma": 0.013,
+
+"random_seed": 10,                # random_seed
+"buffer_size_admin": 2000000,     # replay buffer size
+"batch_size_admin": 256,          # minibatch size
+"gamma": 0.9,                     # discount factor in learn()
+"tau": 1e-3,                      # for soft update of target parameters
+"learning_rate_actor": 1e-3,      # learning rate of the actor
+"learning_rate_critic": 1e-3,     # learning rate of the critic
+"weight_decay": 0.000,            # L2 weight decay
+"learn_every": 1,                 # learn from experiences every <learn_every> steps
+"consecutive_learning_steps": 1,  # how often to learn in one training scession
+"lInterpolParam": [[-4.1, -4.1, -4.1, -1, -1, -1, -1, -17, -4, -14, -22, -22, -22, -11, -11, -11, -1, -1, -1, -1, -15,
+                   -14, -12, -60, -60, -60, -8, -1.1, -8, -0.1, 0.9, -0.1, -1],
+                   [4.1, 4.1, 4.1, 1, 1, 1, 1, 17, 4, 14, 22, 22, 22, 11, 11, 11, 1, 1, 1, 1, 15, 14, 12, 60, 60, 60,
+                   8, -0.9, 8, 0.1, 1.1, 0.1, 1], false],
+"normalize_states": false,                # interpolate the states before input to Network or not
+"number_of_agents": 20,
+"number_of_random_actions": 0,            # number of random actions before training starts
+"max_steps_per_training_episode": 1000,
+"env_train_mode": true,                   # true during training | false for test (gets overwritten with false for test)
+"environment_path":"/data/Reacher_Linux_NoVis/Reacher.x86_64"
+}
