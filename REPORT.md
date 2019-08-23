@@ -5,7 +5,7 @@
 [image3]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/mean_score_30.png "test scores DDPG_1 consecutive mean"
 [image4]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/scores_25.png "training scores DDPG_2"
 [image5]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/losses_25.png "training losses DDPG_2"
-[image5]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/noise_25.png "training noise DDPG_2"
+[image6]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/noise_25.png "training noise DDPG_2"
 [image7]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/scores_26.png "test scores DDPG_2"
 [image8]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/mean_score_26.png "test scores DDPG_2 consecutive mean"
 
