@@ -64,7 +64,7 @@ The Project was solved by two different network architectures
   - learning_rate: 1e-3
 ## Plot of Rewards
 #### DDPG_1
-- task solved in episode 40 (reaching a mean score over 100 consecutive episodes of 30.07435576342932 in episode 139) - config_29.json
+- task solved in episode 40 (reaching a mean score over 100 consecutive episodes of 30.07435576342932 in episode 140) - config_29.json
 ![training scores DDPG_1][image1]
 - the test was performed over 105 episodes with the weights that where saved at episodes 140 of training. Noise was added to the actions during the test - config_30.json
   - Min_Score: 37.18 (Plot mean_scores of following graph)
