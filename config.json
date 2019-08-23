@@ -4,7 +4,7 @@
 #   config = commentjson.load(f)
 
 {
-"load_indices": "s_29",           # s_29 for solved weights of DDPG_1 or g_25 for general weights of DDPG_2 (g_ was saved after <episodes_train> steps)
+"load_indices": "s_25",           # s_29 for solved weights of DDPG_1 or g_25 for general weights of DDPG_2 (g_ was saved after <episodes_train> steps)
 "save_indices": "31",             # used for saving the weights and plots
 "path_load": "archive/",
 "path_save": "results/",
