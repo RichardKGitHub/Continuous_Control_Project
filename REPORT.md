@@ -4,10 +4,8 @@
 [image2]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/scores_30.png "test scores DDPG_1"
 [image3]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/mean_score_30.png "test scores DDPG_1 consecutive mean"
 [image4]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/scores_25.png "training scores DDPG_2"
-[image5]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/losses_25.png "training losses DDPG_2"
-[image6]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/noise_25.png "training noise DDPG_2"
-[image7]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/scores_26.png "test scores DDPG_2"
-[image8]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/mean_score_26.png "test scores DDPG_2 consecutive mean"
+[image5]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/scores_26.png "test scores DDPG_2"
+[image6]: https://github.com/RichardKGitHub/Continuous_Control_Project/blob/master/archive/mean_score_26.png "test scores DDPG_2 consecutive mean"
 
 ## Learning Algorithm
 The Project was solved by a ddpg algorithm ( Deep Deterministic Policy Gradient) \
@@ -76,17 +74,13 @@ The Project was solved by two different network architectures
 #### DDPG_2
 - task solved in episode 26 (reaching a mean score over 100 consecutive episodes of 30.27916 in episode 126) - config_25.json
 ![training scores DDPG_2][image4]
-- losses:
-![training losses DDPG_2][image4]
-- noise:
-![training noise DDPG_2][image6]
 - the test was performed over 105 episodes with the weights that where saved at episodes 126 of training. No Noise was added to the actions during the test - config_26.json
   - Min_Score: 38.84 (Plot mean_scores of following graph)
   - Max_Score: 39.47 (Plot mean_scores of following graph):
-![test scores DDPG_2][image7]
+![test scores DDPG_2][image5]
   - Min_consecutive_Score: 39.2052
   - Max_consecutive_Score: 39.2084:
-![test scores DDPG_2 consecutive mean][image8]
+![test scores DDPG_2 consecutive mean][image6]
 ## Ideas for Future Work
 - In the next step, the parameters for both networks and algorithms could be further adjusted to see if the task can be solved in fewer episodes.
 - The implementation of a Proximal Policy Optimisation algorithm (PPO) is an additional next step in order to compare different learning strategy's.
